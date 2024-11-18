@@ -18,8 +18,11 @@ let Across = document.querySelector('.Across');
 Across.style.display = "none";
 
 let restart = document.querySelector('.restart');
+restart.style.display = "none";
 let taxi = document.querySelector('HLine');
+taxi.style.display = "none";
 let giveup = document.querySelector('.twoButton');
+giveup.style.display = "none";
 
 // html content elements
 let text = document.querySelector('.text');
