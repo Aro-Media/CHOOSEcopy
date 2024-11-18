@@ -6,28 +6,45 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <h1>Okay, Let's try this:</h1>
-    <p class="text">
-      You're walking downtown, enjoying the scenery, when you see a worried old man. he looks at you and his face lights up. He tells you: 
-      <br>"Sir! Could you help me? I need to take these papers to a man named Empathy over on the west side, but I have no ventra card. Could you take these down through the H line, and across the bridge?"
+    <h1 class = "header">Okay, Let's try this:</h1>
+    <div class = "text">
+    <p>
+      You're walking around Centerpoint City, enjoying the scenery, when you see a worried old man. he looks at you and his face lights up. He tells you: 
+      <br><br>"Sir! Could you help me? I need to take these papers to a man named Empathy over on the west side of Westside, but I have no ventra card."
     </p>
+    <p class = "emph">"Could you take these down through the H line, and across the bridge?"</p>
+    </div>
     <div>
-
+<!-- Yes -->
     <button class = "oneButton">Sure!</button>
+   
+<!-- Yes Choices-->
+    <button class = "HLine">H Line?</button>
+<!-- H Line Choices-->
+    <button class = "Below">Down the road, and <em>under</em> that bridge!</button>
+<!--Below Choices-->
+    <button class = "return">We should take the bus back.</button>
+    <button class = "CLine">We'll take the C Line!</button>
+    <button class = "taxed">Let's take a taxi.</button>
+
+    <button class = "Across">Around that road, and <em>across</em> that bridge!</button>
+<!-- Across Choices-->
+    <button class = "give"> Give him the papers</button>
+    <button class = "peek"> Take a peek at the papers >:]</button>
+<!-- End of H Line-->
+    <button class = "N-HLine">C Line?</button>
+<!-- C Line Choices-->
+    <button class = "restart">Yeah... We should head back.</button>
+    <button class = "noCut">Let's just... take a taxi.</button>
+    <button class = "yeahNah">Screw this, I'm going home</button>
+<!-- End of C Line-->
+<!-- End of Yes-->
+<!-- No -->
     <button class = "twoButton">Sorry, I'm Busy...</button>
-    
+<!-- No Choices-->
     <button class = "retry">Yes</button>
     <button class = "retry2">Absolutely</button>
-    
-    <button class = "HLine">H Line?</button>
-    <button class = "N-HLine">C Line?</button>
-
-    <button class = "Below">Down the road, and <em>under</em> that bridge!</button>
-    <button class = "Across">Around that road, and <em>across</em> that bridge!</button>
-
-    <button class = "restart">Yeah... We should head back.</button>
-    <button class = "HLine">Let's just... take a taxi.</button>
-    <button class = "twoButton">Screw this, I'm going home</button>
+<!-- End of No-->
     </div>
   </body>
 </html>

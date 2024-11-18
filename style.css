@@ -1,6 +1,21 @@
-body{width:500px;}
+body{width:550px;}
 img{width:300px;
 margin:0 auto;}
 
-button{margin:5px;
-padding:25px}
+button{
+margin:5px;
+padding:25px;
+color: white;
+font-size: medium;
+background-color: black;
+border: 2px solid yellow;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+.emph{
+    color: yellow;
+}
+

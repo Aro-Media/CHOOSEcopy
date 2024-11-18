@@ -19,11 +19,22 @@ Across.style.display = "none";
 
 let restart = document.querySelector('.restart');
 restart.style.display = "none";
-let taxi = document.querySelector('HLine');
+let taxi = document.querySelector('.noCut');
 taxi.style.display = "none";
-let giveup = document.querySelector('.twoButton');
+let giveup = document.querySelector('.yeahNah');
 giveup.style.display = "none";
 
+let bus = document.querySelector('.return');
+bus.style.display = "none";
+let realCLine = document.querySelector('.CLine');
+realCLine.style.display = "none";
+let taxed = document.querySelector('.taxed');
+taxed.style.display = "none";
+
+let give = document.querySelector('.give');
+give.style.display = "none";
+let peek = document.querySelector('.peek');
+peek.style.display = "none";
 // html content elements
 let text = document.querySelector('.text');
 
@@ -32,7 +43,7 @@ let text = document.querySelector('.text');
 
 
 yesButton.addEventListener('click', function() {
-text.innerHTML = "We need to go to Evanston. What did that man say again?";
+text.innerHTML = " Here we are! welcome to Centerpoint station. We need to go to the west side (of Westside). What did that man say again?";
 yesButton.style.display = "none";
 noButton.style.display = "none";
 HLine.style.display = "block";
@@ -46,7 +57,7 @@ noButton.style.display = "none";
     });
 
 HLine.addEventListener('click', function(){
-text.innerHTML = "We made it to the station. There's a single road heading north, with a bridge going over it holding another road that moves east/west. <br> <br> So... where do we go again?";
+text.innerHTML = "We made it to the westside station. There's a single road heading north, with a bridge going over it holding another road that moves east/west. <br> <br> So... where do we go again?";
 HLine.style.display = "none";
 CLine.style.display = "none";
 Below.style.display = "block";
@@ -54,7 +65,52 @@ Across.style.display = "block";
 });
 
 CLine.addEventListener('click', function() {
-text.innerHTML = "So. We're lost. That <em>might</em> not've been the right direction. <br> <br> Uh... What do we do now?";
+text.innerHTML = "So. We're lost. That <em>might</em> not've been the right direction, given the fact we're somehow in WESTERN NORTHSIDE. <br> <br> ...What do we do now?";
 HLine.style.display = "none";
 CLine.style.display = "none";
+restart.style.display = "block";
+taxi.style.display = "block";
+giveup.style.display = "block";
+});
+
+restart.addEventListener('click', function() {
+    text.innerHTML = "We made it to the station... again. We had to fight the crowd to get here, but we can finally start right. <br> <br> We should know better now. Where are we heading?";
+    restart.style.display = "none";
+    taxi.style.display = "none";
+    giveup.style.display = "none";
+    HLine.style.display = "block";
+    CLine.style.display = "block";
+});
+
+taxi.addEventListener('click', function() {
+    text.innerHTML = "After that small... hiccup, we've made it to Westside station. You're also down 30$ btw (thanks for the lift). There's a single road heading north, with a bridge going over it holding another road that moves east/west. <br> <br> So... where do we go again? ";
+    restart.style.display = "none";
+    taxi.style.display = "none";
+    giveup.style.display = "none";
+    Below.style.display = "block";
+    Across.style.display = "block";
+});
+
+giveup.addEventListener('click', function() {
+    text.innerHTML = "Free will is a myth. Reload and try again.";
+    restart.style.display = "none";
+    taxi.style.display = "none";
+    giveup.style.display = "none";
+        });
+
+Below.addEventListener('click', function() {
+    text.innerHTML = "You wait for a bus, and eventually, we end up in... western Northside. yeah, turns out that road heading north DOESN'T take you west. crazy, right? <br> *sigh* <br> What do we do now?";
+    realCLine.style.display = "block";
+    bus.style.display = "block";
+    taxed.style.display = "block";
+    Below.style.display = "none";
+    Across.style.display = "none";
+});
+
+Across.addEventListener('click', function() {
+    text.innerHTML = "You did it. We're in western Westside. There's a guy down there with a nametag that says 'empathy'. It's finally over.<br><br> What do you do.";
+    Below.style.display = "none";
+    Across.style.display = "none";
+    give.style.display = "block";
+    peek.style.display = "block";
 });
