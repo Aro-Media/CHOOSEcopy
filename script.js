@@ -38,7 +38,15 @@ peek.style.display = "none";
 // html content elements
 let text = document.querySelector('.text');
 
+let giveman = document.querySelector('.busiGive');
+giveman.style.display = "none";
+let happyguy = document.querySelector('.happiestDay');
+happyguy.style.display = "none";
+let cont = document.querySelector('.cont');
+cont.style.display = "none";
 
+let run = document.querySelector('.run');
+run.style.display = "none";
 
 
 
@@ -51,7 +59,7 @@ CLine.style.display = "block";
 });
 
 noButton.addEventListener('click', function() {
-text.innerHTML = "Free will is a myth. Reload and try again.";
+text.innerHTML = "Congrats! You were presented with a chance for adventure.. and didn't take it. You are boring. Please reload and try again. <br><br> Boring end :(";
 yesButton.style.display = "none";
 noButton.style.display = "none";
     });
@@ -83,16 +91,18 @@ restart.addEventListener('click', function() {
 });
 
 taxi.addEventListener('click', function() {
-    text.innerHTML = "After that small... hiccup, we've made it to Westside station. You're also down 30$ btw (thanks for the lift). There's a single road heading north, with a bridge going over it holding another road that moves east/west. <br> <br> So... where do we go again? ";
+    text.innerHTML = "After that small... issue, we've made it to Westside station. You're also down ANOTHER 30$ btw (thanks for the lift). There's a single road heading north, with a bridge going over it holding another road that moves east/west. <br> <br> So... where do we go again? ";
     restart.style.display = "none";
     taxi.style.display = "none";
+    realCLine.style.display = "none";
+    bus.style.display = "none";
     giveup.style.display = "none";
     Below.style.display = "block";
     Across.style.display = "block";
 });
 
 giveup.addEventListener('click', function() {
-    text.innerHTML = "Free will is a myth. Reload and try again.";
+    text.innerHTML = "Congrats! You were presented with a chance for adventure.. and didn't take it. You are boring. Please reload and try again. <br><br> Boring end :(";
     restart.style.display = "none";
     taxi.style.display = "none";
     giveup.style.display = "none";
@@ -102,7 +112,7 @@ Below.addEventListener('click', function() {
     text.innerHTML = "You wait for a bus, and eventually, we end up in... western Northside. yeah, turns out that road heading north DOESN'T take you west. crazy, right? <br> *sigh* <br> What do we do now?";
     realCLine.style.display = "block";
     bus.style.display = "block";
-    taxed.style.display = "block";
+    taxi.style.display = "block";
     Below.style.display = "none";
     Across.style.display = "none";
 });
@@ -113,4 +123,56 @@ Across.addEventListener('click', function() {
     Across.style.display = "none";
     give.style.display = "block";
     peek.style.display = "block";
+});
+
+give.addEventListener('click', function() {
+    text.innerHTML = "Give the guy his paper <br><br> please";
+    give.style.display = "none";
+    peek.style.display = "none";
+    giveman.style.display = "block";
+});
+
+giveman.addEventListener('click', function () {
+    text.innerHTML = "Yippee <br> <br> you win :)";
+    happyguy.style.display = "block";
+    giveman.style.display = "none";
+});
+happyguy.addEventListener('dblclick', function () {
+    text.innerHTML = "What did you do?? What did he do to you?? You just punched that guy! Great, now the police are here. You're going to prison for battery. I hope that was worth it, you monster.";
+    happyguy.style.display = "none";
+    cont.style.display = "block";
+});
+cont.addEventListener('click', function () {
+    text.innerHTML = "Prison End :(";
+    cont.style.display = "none";
+});
+
+realCLine.addEventListener('click', function() {
+    text.innerHTML = "Wait, that could work! It'd take us back to Centerpoint, but that's better than being stuck in west northside. Should we do that?"
+    restart.style.display = "block";
+    realCLine.style.display = "none";
+    bus.style.display = "none";
+    taxi.style.display = "none";
+});
+
+bus.addEventListener('click', function () {
+    text.innerHTML = "You're here. again. you know what to do now. <br><br> ...Right?"
+    realCLine.style.display = "none";
+    bus.style.display = "none";
+    taxi.style.display = "none";
+    Below.style.display = "block";
+    Across.style.display = "block";
+});
+
+peek.addEventListener('click', function () {
+    text.innerHTML = "Wait a minute... Those are taxes! This was a setup! Quick, you have to run!";
+    run.style.display = "block";
+    give.style.display = "none";
+    peek.style.display = "none";
+});
+
+run.addEventListener('click', function () {
+    text.innerHTML = "But it was too late. The old man from before turned out to be a CIA agent, and he tackled you before you could leave. Those decades of tax fraud are finally coming back for you.";
+    run.style.display = "none";
+    cont.style.display = "block";
 });
