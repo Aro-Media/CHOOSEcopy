@@ -45,6 +45,9 @@ happyguy.style.display = "none";
 let cont = document.querySelector('.cont');
 cont.style.display = "none";
 
+let cont2 = document.querySelector('.cont2');
+cont2.style.display = "none";
+
 let run = document.querySelector('.run');
 run.style.display = "none";
 
@@ -140,11 +143,16 @@ giveman.addEventListener('click', function () {
 happyguy.addEventListener('dblclick', function () {
     text.innerHTML = "What did you do?? What did he do to you?? You just punched that guy! Great, now the police are here. You're going to prison for battery. I hope that was worth it, you monster.";
     happyguy.style.display = "none";
-    cont.style.display = "block";
+    cont2.style.display = "block";
 });
 cont.addEventListener('click', function () {
     text.innerHTML = "Prison End :(";
     cont.style.display = "none";
+});
+
+cont2.addEventListener('click', function () {
+    text.innerHTML = "You're super special.... and in jail <br><br>  [SECRET] Prison End... :( ???";
+    cont2.style.display = "none";
 });
 
 realCLine.addEventListener('click', function() {

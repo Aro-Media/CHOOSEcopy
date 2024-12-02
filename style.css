@@ -1,4 +1,5 @@
-body{width:550px;}
+/*body{width:550px;}*/
+
 img{width:300px;
 margin:0 auto;}
 
@@ -19,3 +20,16 @@ body{
     color: yellow;
 }
 
+
+
+.bigbody {
+    border: 1px dotted white;
+  
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.text{
+    width: 500px;
+}
