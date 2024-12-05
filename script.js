@@ -54,7 +54,7 @@ run.style.display = "none";
 
 
 yesButton.addEventListener('click', function() {
-text.innerHTML = " Here we are! welcome to Centerpoint station. We need to go to the west side (of Westside). What did that man say again?";
+text.innerHTML = " Here we are! welcome to Centerpoint station. We need to go to the west side (of Westside). What did that man say again? <br><br>";
 yesButton.style.display = "none";
 noButton.style.display = "none";
 HLine.style.display = "block";
@@ -62,13 +62,13 @@ CLine.style.display = "block";
 });
 
 noButton.addEventListener('click', function() {
-text.innerHTML = "Congrats! You were presented with a chance for adventure.. and didn't take it. You are boring. Please reload and try again. <br><br> Boring end :(";
+text.innerHTML = "Congrats! You were presented with a chance for adventure.. and didn't take it. You are boring. Please reload and try again. <br><br> Boring end :( <br><br>";
 yesButton.style.display = "none";
 noButton.style.display = "none";
     });
 
 HLine.addEventListener('click', function(){
-text.innerHTML = "We made it to the westside station. There's a single road heading north, with a bridge going over it holding another road that moves east/west. <br> <br> So... where do we go again?";
+text.innerHTML = "We made it to the westside station. There's a single road heading north, with a bridge going over it holding another road that moves east/west. <br> <br> So... where do we go again? <br><br>";
 HLine.style.display = "none";
 CLine.style.display = "none";
 Below.style.display = "block";
@@ -76,7 +76,7 @@ Across.style.display = "block";
 });
 
 CLine.addEventListener('click', function() {
-text.innerHTML = "So. We're lost. That <em>might</em> not've been the right direction, given the fact we're somehow in WESTERN NORTHSIDE. <br> <br> ...What do we do now?";
+text.innerHTML = "So. We're lost. That <em>might</em> not've been the right direction, given the fact we're somehow in WESTERN NORTHSIDE. <br> <br> ...What do we do now? <br><br>";
 HLine.style.display = "none";
 CLine.style.display = "none";
 restart.style.display = "block";
@@ -85,7 +85,7 @@ giveup.style.display = "block";
 });
 
 restart.addEventListener('click', function() {
-    text.innerHTML = "We made it to the station... again. We had to fight the crowd to get here, but we can finally start right. <br> <br> We should know better now. Where are we heading?";
+    text.innerHTML = "We made it to the station... again. We had to fight the crowd to get here, but we can finally start right. <br> <br> We should know better now. Where are we heading? <br><br>";
     restart.style.display = "none";
     taxi.style.display = "none";
     giveup.style.display = "none";
@@ -94,7 +94,7 @@ restart.addEventListener('click', function() {
 });
 
 taxi.addEventListener('click', function() {
-    text.innerHTML = "After that small... issue, we've made it to Westside station. You're also down ANOTHER 30$ btw (thanks for the lift). There's a single road heading north, with a bridge going over it holding another road that moves east/west. <br> <br> So... where do we go again? ";
+    text.innerHTML = "After that small... issue, we've made it to Westside station. You're also down ANOTHER 30$ btw (thanks for the lift). There's a single road heading north, with a bridge going over it holding another road that moves east/west. <br> <br> So... where do we go again? <br><br>";
     restart.style.display = "none";
     taxi.style.display = "none";
     realCLine.style.display = "none";
@@ -105,14 +105,14 @@ taxi.addEventListener('click', function() {
 });
 
 giveup.addEventListener('click', function() {
-    text.innerHTML = "Congrats! You were presented with a chance for adventure.. and didn't take it. You are boring. Please reload and try again. <br><br> Boring end :(";
+    text.innerHTML = "Congrats! You were presented with a chance for adventure.. and didn't take it. You are boring. Please reload and try again. <br><br> Boring end :( <br><br>";
     restart.style.display = "none";
     taxi.style.display = "none";
     giveup.style.display = "none";
         });
 
 Below.addEventListener('click', function() {
-    text.innerHTML = "You wait for a bus, and eventually, we end up in... western Northside. yeah, turns out that road heading north DOESN'T take you west. crazy, right? <br> *sigh* <br> What do we do now?";
+    text.innerHTML = "You wait for a bus, and eventually, we end up in... western Northside. yeah, turns out that road heading north DOESN'T take you west. crazy, right? <br> *sigh* <br> What do we do now? <br><br>";
     realCLine.style.display = "block";
     bus.style.display = "block";
     taxi.style.display = "block";
@@ -121,7 +121,7 @@ Below.addEventListener('click', function() {
 });
 
 Across.addEventListener('click', function() {
-    text.innerHTML = "You did it. We're in western Westside. There's a guy down there with a nametag that says 'empathy'. It's finally over.<br><br> What do you do.";
+    text.innerHTML = "You did it. We're in western Westside. There's a guy down there with a nametag that says 'empathy'. It's finally over.<br><br> What do you do. <br><br>";
     Below.style.display = "none";
     Across.style.display = "none";
     give.style.display = "block";
@@ -129,19 +129,19 @@ Across.addEventListener('click', function() {
 });
 
 give.addEventListener('click', function() {
-    text.innerHTML = "Give the guy his paper <br><br> please";
+    text.innerHTML = "Give the guy his paper <br><br> please <br><br>";
     give.style.display = "none";
     peek.style.display = "none";
     giveman.style.display = "block";
 });
 
 giveman.addEventListener('click', function () {
-    text.innerHTML = "Yippee <br> <br> you win :)";
     happyguy.style.display = "block";
+    text.innerHTML = "Yippee <br> <br> you win :)";
     giveman.style.display = "none";
 });
 happyguy.addEventListener('dblclick', function () {
-    text.innerHTML = "What did you do?? What did he do to you?? You just punched that guy! Great, now the police are here. You're going to prison for battery. I hope that was worth it, you monster.";
+    text.innerHTML = "What did you do?? What did he do to you?? You just punched that guy! Great, now the police are here. You're going to prison for battery. I hope that was worth it, you monster. <br><br>";
     happyguy.style.display = "none";
     cont2.style.display = "block";
 });
@@ -151,12 +151,12 @@ cont.addEventListener('click', function () {
 });
 
 cont2.addEventListener('click', function () {
-    text.innerHTML = "You're super special.... and in jail <br><br>  [SECRET] Prison End... :( ???";
+    text.innerHTML = "You're super special.... and in jail <br><br>  [SECRET] Prison End... :( ??? <br><br>";
     cont2.style.display = "none";
 });
 
 realCLine.addEventListener('click', function() {
-    text.innerHTML = "Wait, that could work! It'd take us back to Centerpoint, but that's better than being stuck in west northside. Should we do that?"
+    text.innerHTML = "Wait, that could work! It'd take us back to Centerpoint, but that's better than being stuck in west northside. Should we do that? <br><br>"
     restart.style.display = "block";
     realCLine.style.display = "none";
     bus.style.display = "none";
@@ -164,7 +164,7 @@ realCLine.addEventListener('click', function() {
 });
 
 bus.addEventListener('click', function () {
-    text.innerHTML = "You're here. again. you know what to do now. <br><br> ...Right?"
+    text.innerHTML = "You're here. again. you know what to do now. <br><br> ...Right? <br><br>"
     realCLine.style.display = "none";
     bus.style.display = "none";
     taxi.style.display = "none";
@@ -173,14 +173,14 @@ bus.addEventListener('click', function () {
 });
 
 peek.addEventListener('click', function () {
-    text.innerHTML = "Wait a minute... Those are taxes! This was a setup! Quick, you have to run!";
+    text.innerHTML = "Wait a minute... Those are taxes! This was a setup! Quick, you have to run! <br><br>";
     run.style.display = "block";
     give.style.display = "none";
     peek.style.display = "none";
 });
 
 run.addEventListener('click', function () {
-    text.innerHTML = "But it was too late. The old man from before turned out to be a CIA agent, and he tackled you before you could leave. Those decades of tax fraud are finally coming back for you.";
+    text.innerHTML = "But it was too late. The old man from before turned out to be a CIA agent, and he tackled you before you could leave. Those decades of tax fraud are finally coming back for you. <br><br>";
     run.style.display = "none";
     cont.style.display = "block";
 });
