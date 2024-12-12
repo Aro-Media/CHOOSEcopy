@@ -36,14 +36,14 @@ body {
 
 .text_buttons{
     width: 500px;
-    border: 1px solid white;
+    border: 1px solid #ff00ff;
     padding: 10px;
-    margin: 20px;
+    margin: 30px;
 }
 
 .miraidon {
-    border: 1px dotted white;
-    margin: 30px;
+    border: 2px dotted magenta;
+    margin: 20px;
 }
 
 .text {
